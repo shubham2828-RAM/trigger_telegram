@@ -53,7 +53,7 @@ async fn main() {
         date_time,
         project_link
     );
-    match send_telegram_message(chat_id.as_str(), message.as_str()).await
+    match send_telegram_message( message.as_str()).await
     {
         Ok(_) => {
             println!("Telegram message sent successfully");
